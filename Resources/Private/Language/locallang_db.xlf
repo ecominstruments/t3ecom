@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-07-13T07:44:29Z" product-name="t3ecom">
+		<header/>
+		<body>
+			<trans-unit id="tx_teaser_text" xml:space="preserve">
+				<source>Teaser Text</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_headline" xml:space="preserve">
+				<source>Teaser Headline</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_image" xml:space="preserve">
+				<source>Teaser Image</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_link" xml:space="preserve">
+				<source>Teaser Link</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_link_label" xml:space="preserve">
+				<source>Teaser Link - Label</source>
+			</trans-unit>
+			<trans-unit id="tx_page_icon" xml:space="preserve">
+				<source>Icon class</source>
+			</trans-unit>
+			<trans-unit id="tx_footer_description" xml:space="preserve">
+				<source>Footer page description</source>
+			</trans-unit>
+			<trans-unit id="tx_hide_footer_description" xml:space="preserve">
+				<source>Hide footer page description</source>
+			</trans-unit>
+			<trans-unit id="tx_add_link" xml:space="preserve">
+				<source>Additional link</source>
+			</trans-unit>
+			<trans-unit id="tx_add_link_label" xml:space="preserve">
+				<source>Additional link - Label</source>
+			</trans-unit>
+			<trans-unit id="tx_product_image" xml:space="preserve">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_product_discontinued" xml:space="preserve">
+				<source>Discontinued</source>
+			</trans-unit>
+			<trans-unit id="tx_product_zone" xml:space="preserve">
+				<source>Zone</source>
+			</trans-unit>
+			<trans-unit id="tx_product_division" xml:space="preserve">
+				<source>Division</source>
+			</trans-unit>
+			<trans-unit id="tx_subnavigation_title" xml:space="preserve">
+				<source>Sub Navigation Title</source>
+			</trans-unit>
+			<trans-unit id="tx_news_comments" xml:space="preserve">
+				<source>Show Comments</source>
+			</trans-unit>
+			<trans-unit id="div.teaser" xml:space="preserve">
+				<source>Teaser</source>
+			</trans-unit>
+			<trans-unit id="div.product" xml:space="preserve">
+				<source>Product Setup</source>
+			</trans-unit>
+			<trans-unit id="div.footer" xml:space="preserve">
+				<source>Footer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

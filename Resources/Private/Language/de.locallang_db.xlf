@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-07-13T07:44:29Z" product-name="t3ecom">
+		<header/>
+		<body>
+			<trans-unit id="tx_teaser_text" xml:space="preserve">
+				<source>Teaser Text</source>
+				<target>Teaser</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser_headline" xml:space="preserve">
+				<source>Teaser Headline</source>
+				<target>Teaser Überschrift</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser_image" xml:space="preserve">
+				<source>Teaser Image</source>
+				<target>Teaser-Bild</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser_link" xml:space="preserve">
+				<source>Teaser Link</source>
+				<target>Teaser-Link</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser_link_label" xml:space="preserve">
+				<source>Teaser Link - Label</source>
+				<target>Teaser-Link - Beschriftung</target>
+			</trans-unit>
+			<trans-unit id="tx_page_icon" xml:space="preserve">
+				<source>Icon class</source>
+				<target>Iconklasse</target>
+			</trans-unit>
+			<trans-unit id="tx_footer_description" xml:space="preserve">
+				<source>Footer page description</source>
+				<target>Footer Seitenbeschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_hide_footer_description" xml:space="preserve">
+				<source>Hide footer page description</source>
+				<target>Footer Seitenbeschreibung verbergen</target>
+			</trans-unit>
+			<trans-unit id="tx_add_link" xml:space="preserve">
+				<source>Additional link</source>
+				<target>Zusätzlicher Link</target>
+			</trans-unit>
+			<trans-unit id="tx_add_link_label" xml:space="preserve">
+				<source>Additional link - Label</source>
+				<target>Zusätzlicher Link - Beschriftung</target>
+			</trans-unit>
+			<trans-unit id="tx_product_image" xml:space="preserve">
+				<source>Image</source>
+				<target>Bild</target>
+			</trans-unit>
+			<trans-unit id="tx_product_discontinued" xml:space="preserve">
+				<source>Discontinued</source>
+				<target>Abgekündigt</target>
+			</trans-unit>
+			<trans-unit id="tx_subnavigation_title" xml:space="preserve">
+				<source>Sub-Navigation Title</source>
+				<target>Unternavigationstitel</target>
+			</trans-unit>
+			<trans-unit id="tx_news_comments" xml:space="preserve">
+				<source>Show Comments</source>
+				<target>Kommentare anzeigen</target>
+			</trans-unit>
+			<trans-unit id="div.product" xml:space="preserve">
+				<source>Produkt-Einstellungen</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
