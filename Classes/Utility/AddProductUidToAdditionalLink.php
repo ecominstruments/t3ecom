@@ -20,20 +20,21 @@
 		 * @return string
 		 */
 		public function main(array $tsConfig) {
-			$urlParts = parse_url($tsConfig['url']);
-			parse_str($urlParts['query'], $parameters);
-			if ( !$urlParts['query'] || (is_array($parameters) && !array_key_exists('product', $parameters)) ) {
+			$tag = rawurldecode($tsConfig['TAG']);
+			if ( !preg_match('/\{product\}/i', $tag) ) {
 				return $tsConfig['TAG'];
 			}
 			/** @var \TYPO3\CMS\Core\Database\DatabaseConnection $db */
 			$db = $GLOBALS['TYPO3_DB'];
 			if ( $page = $db->exec_SELECTgetSingleRow('tx_product', 'pages', 'uid=' . $GLOBALS['TSFE']->id) ) {
 				if ( \TYPO3\CMS\Core\Utility\MathUtility::canBeInterpretedAsInteger($page['tx_product']) && \TYPO3\CMS\Core\Utility\MathUtility::convertToPositiveInteger($page['tx_product']) ) {
-					return preg_replace('/\{product\}/i', \TYPO3\CMS\Core\Utility\MathUtility::convertToPositiveInteger($page['tx_product']), $tsConfig['TAG']);
+					$tag = preg_replace('/\{product\}/i', \TYPO3\CMS\Core\Utility\MathUtility::convertToPositiveInteger($page['tx_product']), $tag);
 				}
 			}
 
-			return $tsConfig['TAG'];
+			$tag = preg_replace('/(\?|\&)([a-z0-9]+)\=\{product\}/i', '', $tag);
+
+			return preg_replace('/href\=\"([a-z0-9\?\&\#\_\-])\"/i', rawurlencode('$1'), $tag);
 		}
 
 	}
