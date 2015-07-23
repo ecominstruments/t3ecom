@@ -29,8 +29,18 @@ $addColumns = [
 			'size' => 30,
 			'eval' => 'trim'
 		]
+	],
+	'tx_add_link_product' => [
+		'exclude' => 1,
+		'displayCond' => 'HIDE_FOR_NON_ADMINS',
+		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_add_link_product',
+		'config' => [
+			'type' => 'input',
+			'size' => 30,
+			'eval' => 'trim'
+		]
 	]
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $addColumns, TRUE);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content','tx_add_link;;;;1-1-1,tx_add_link_label', 'text,textpic', 'after:rte_enabled');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content','tx_add_link;;;;1-1-1, tx_add_link_label, tx_add_link_product', 'text,textpic', 'after:rte_enabled');

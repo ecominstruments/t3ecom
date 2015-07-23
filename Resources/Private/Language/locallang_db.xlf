@@ -33,6 +33,12 @@
 			<trans-unit id="tx_add_link_label" xml:space="preserve">
 				<source>Additional link - Label</source>
 			</trans-unit>
+			<trans-unit id="tx_add_link_product" xml:space="preserve">
+				<source>Additional link - Add params</source>
+			</trans-unit>
+			<trans-unit id="tx_product" xml:space="preserve">
+				<source>Product (link to direct downloads)</source>
+			</trans-unit>
 			<trans-unit id="tx_product_image" xml:space="preserve">
 				<source>Image</source>
 			</trans-unit>

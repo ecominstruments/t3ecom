@@ -43,6 +43,13 @@
 				<source>Additional link - Label</source>
 				<target>Zusätzlicher Link - Beschriftung</target>
 			</trans-unit>
+			<trans-unit id="tx_add_link_product" xml:space="preserve">
+				<source>Zusätzlicher Link - Parameter hinzufügen</source>
+			</trans-unit>
+			<trans-unit id="tx_product" xml:space="preserve">
+				<source>Product (link to direct downloads)</source>
+				<target>Produkt (Link zu den Direkt-Downloads)</target>
+			</trans-unit>
 			<trans-unit id="tx_product_image" xml:space="preserve">
 				<source>Image</source>
 				<target>Bild</target>

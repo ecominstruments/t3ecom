@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="nl" datatype="plaintext" original="messages" date="2015-07-13T07:44:29Z" product-name="t3ecom">
+		<header/>
+		<body>
+			<trans-unit id="learn_more" xml:space="preserve">
+				<source>Learn more</source>
+				<target>Lees meer</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
