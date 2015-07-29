@@ -16,25 +16,42 @@
 
 		/**
 		 * @param array $tsConfig
+		 * @param array $userArguments
 		 *
 		 * @return string
 		 */
-		public function main(array $tsConfig) {
-			$tag = rawurldecode($tsConfig['TAG']);
-			if ( !preg_match('/\{product\}/i', $tag) ) {
+		public function main(array $tsConfig, $userArguments = array()) {
+			$url = $tsConfig['url'];
+			$regExpCurlyBraceOpen  = preg_quote(rawurlencode('{'), '@');
+			$regExpCurlyBraceClose = preg_quote(rawurlencode('}'), '@');
+			$pattern = "@{$regExpCurlyBraceOpen}product{$regExpCurlyBraceClose}@i";
+
+			// Return if argument to be replaced is not set!
+			if ( !preg_match($pattern, $url) ) {
 				return $tsConfig['TAG'];
 			}
+
 			/** @var \TYPO3\CMS\Core\Database\DatabaseConnection $db */
 			$db = $GLOBALS['TYPO3_DB'];
+			/**
+			 * <a href="' . $finalTagParts['url'] . '"' . $finalTagParts['targetParams'] . $finalTagParts['aTagParams'] . '>
+			 * @see http://docs.typo3.org/typo3cms/TyposcriptReference/Functions/Typolink/Index.html
+			 */
+			$return = '<a href="%1$s"%2$s>';
+
+			$product = FALSE;
+			// get necessary params to apply; replace in url
 			if ( $page = $db->exec_SELECTgetSingleRow('tx_product', 'pages', 'uid=' . $GLOBALS['TSFE']->id) ) {
 				if ( \TYPO3\CMS\Core\Utility\MathUtility::canBeInterpretedAsInteger($page['tx_product']) && \TYPO3\CMS\Core\Utility\MathUtility::convertToPositiveInteger($page['tx_product']) ) {
-					$tag = preg_replace('/\{product\}/i', \TYPO3\CMS\Core\Utility\MathUtility::convertToPositiveInteger($page['tx_product']), $tag);
+					$product = \TYPO3\CMS\Core\Utility\MathUtility::convertToPositiveInteger($page['tx_product']);
 				}
 			}
 
-			$tag = preg_replace('/(\?|\&)([a-z0-9]+)\=\{product\}/i', '', $tag);
+			/** @var \TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer $contentObject */
+			$contentObject = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Frontend\\ContentObject\\ContentObjectRenderer');
+			$url = str_ireplace($GLOBALS['TSFE']->baseUrl, '', $contentObject->getTypoLink_URL($userArguments['targetPid'], $product ? [ 'product' => $product ] : [ ]));
 
-			return preg_replace('/href\=\"([a-z0-9\?\&\#\_\-])\"/i', rawurlencode('$1'), $tag);
+			return sprintf($return, $url, $tsConfig['targetParams'] . $tsConfig['aTagParams']);
 		}
 
 	}

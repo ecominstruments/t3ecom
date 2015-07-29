@@ -16,6 +16,7 @@ tt_content {
 					ATagParams = data-morelink="tt_content"
 					ATagBeforeWrap = 1
 					userFunc = Ecom\T3ecom\Utility\AddProductUidToAdditionalLink->main
+					userFunc.targetPid = 120
 				}
 				fieldRequired = tx_add_link
 			}
