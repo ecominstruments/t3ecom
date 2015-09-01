@@ -29,16 +29,4 @@ class ExtendedFormController extends \In2code\Powermail\Controller\FormControlle
 			}
 		}
 	}
-
-	/**
-	 * Powermail saves all attachments in the session and they never get deleted.
-	 * If you send a form with no file uploads, old attachments will still be
-	 * sent, in case you previously filled out a form containing a file upload.
-	 *
-	 * This hook clears the session value for corresponding field in order to
-	 * avoid this behavior.
-	 */
-	public function deleteAttachments() {
-		\In2code\Powermail\Utility\Div::setSessionValue('upload', [ ], TRUE);
-	}
 }
