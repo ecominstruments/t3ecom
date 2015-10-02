@@ -89,6 +89,13 @@ return [
 			$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
 		)
 	],
+	'tx_product_shipping' => [
+		'exclude' => 1,
+		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_shipping',
+		'config' => [
+			'type' => 'check'
+		]
+	],
 	'tx_product_discontinued' => [
 		'exclude' => 1,
 		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_discontinued',

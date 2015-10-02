@@ -54,6 +54,10 @@
 				<source>Image</source>
 				<target>Bild</target>
 			</trans-unit>
+			<trans-unit id="tx_product_shipping" xml:space="preserve">
+				<source>Now shipping</source>
+				<target>Jetzt verfügbar</target>
+			</trans-unit>
 			<trans-unit id="tx_product_discontinued" xml:space="preserve">
 				<source>Discontinued</source>
 				<target>Abgekündigt</target>
