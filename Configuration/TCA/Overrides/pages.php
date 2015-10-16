@@ -2,6 +2,53 @@
 
 $addColumns = require(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('t3ecom', 'Resources/Private/PHP/TCA/Overrides/pages.php'));
 	// Single field that applies to pages table only (no overlay)
+
+$addColumns['tx_product_shipping'] = [
+	'exclude' => 1,
+	'l10n_mode' => 'exclude',
+	'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_shipping',
+	'config' => [
+		'type' => 'check'
+	]
+];
+$addColumns['tx_product_discontinued'] = [
+	'exclude' => 1,
+	'l10n_mode' => 'exclude',
+	'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_discontinued',
+	'config' => [
+		'type' => 'check'
+	]
+];
+$addColumns['tx_product_zone'] = [
+	'exclude' => 1,
+	'l10n_mode' => 'exclude',
+	'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_zone',
+	'config' => [
+		'type' => 'select',
+		'items' => [
+			[ '-', 'none' ],
+			[ '0', 0 ],
+			[ '1', 1 ],
+			[ '2', 2 ],
+			[ '0/20', 3 ],
+			[ '1/21', 4 ],
+			[ '2/22', 5 ],
+		]
+	]
+];
+$addColumns['tx_product_division'] = [
+	'exclude' => 1,
+	'l10n_mode' => 'exclude',
+	'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_division',
+	'config' => [
+		'type' => 'select',
+		'items' => [
+			[ '-', 'none' ],
+			[ '1', 1 ],
+			[ '2', 2 ],
+		]
+	]
+];
 $addColumns['tx_product'] = [
 	'exclude' => 1,
 	'l10n_mode' => 'exclude',

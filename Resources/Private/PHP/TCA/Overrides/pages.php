@@ -89,48 +89,6 @@ return [
 			$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
 		)
 	],
-	'tx_product_shipping' => [
-		'exclude' => 1,
-		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_shipping',
-		'config' => [
-			'type' => 'check'
-		]
-	],
-	'tx_product_discontinued' => [
-		'exclude' => 1,
-		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_discontinued',
-		'config' => [
-			'type' => 'check'
-		]
-	],
-	'tx_product_zone' => [
-		'exclude' => 1,
-		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_zone',
-		'config' => [
-			'type' => 'select',
-			'items' => [
-				[ '-', 'none' ],
-				[ '0', 0 ],
-				[ '1', 1 ],
-				[ '2', 2 ],
-				[ '0/20', 3 ],
-				[ '1/21', 4 ],
-				[ '2/22', 5 ],
-			]
-		]
-	],
-	'tx_product_division' => [
-		'exclude' => 1,
-		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_division',
-		'config' => [
-			'type' => 'select',
-			'items' => [
-				[ '-', 'none' ],
-				[ '1', 1 ],
-				[ '2', 2 ],
-			]
-		]
-	],
 	'tx_subnavigation_title' => [
 		'exclude' => 1,
 		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_subnavigation_title',

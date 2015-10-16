@@ -31,10 +31,6 @@ CREATE TABLE pages_language_overlay (
 	tx_footer_description text,
 	tx_hide_footer_description tinyint(4) unsigned DEFAULT '0' NOT NULL,
 	tx_product_image varchar(255) DEFAULT '' NOT NULL,
-	tx_product_shipping int(1) DEFAULT '0' NOT NULL,
-	tx_product_discontinued int(1) DEFAULT '0' NOT NULL,
-	tx_product_zone varchar(255) DEFAULT '' NOT NULL,
-	tx_product_division varchar(255) DEFAULT '' NOT NULL,
 	tx_subnavigation_title varchar(255) DEFAULT '' NOT NULL
 );
 
