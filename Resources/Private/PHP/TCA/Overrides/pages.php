@@ -10,14 +10,15 @@ return [
 			'rows' => 5,
 			'softref' => 'typolink_tag,images,email[subst],url',
 			'wizards' => [
-				'_PADDING' => 4,
 				'RTE' => [
+					'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
+					'module' => [
+						'name' => 'wizard_rte'
+					],
 					'notNewRecords' => 1,
 					'RTEonly' => 1,
-					'type' => 'script',
-					'title' => 'LLL:EXT:cms/locallang_ttc.php:bodytext.W.RTE',
-					'icon' => 'wizard_rte2.gif',
-					'script' => 'wizard_rte.php'
+					'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
+					'type' => 'script'
 				]
 			]
 		]
@@ -33,12 +34,14 @@ return [
 			'wizards' => [
 				'_PADDING' => 4,
 				'RTE' => [
-					'notNewRecords' => 1,
-					'RTEonly' => 1,
-					'type' => 'script',
-					'title' => 'LLL:EXT:cms/locallang_ttc.php:bodytext.W.RTE',
-					'icon' => 'wizard_rte2.gif',
-					'script' => 'wizard_rte.php'
+						'icon' => 'EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_rte.gif',
+						'module' => [
+								'name' => 'wizard_rte'
+						],
+						'notNewRecords' => 1,
+						'RTEonly' => 1,
+						'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.W.RTE',
+						'type' => 'script'
 				]
 			]
 		]
@@ -108,13 +111,17 @@ return [
 			'eval' => 'trim',
 			'softref' => 'typolink',
 			'wizards' => [
-				'_PADDING' => 2,
 				'link' => [
-					'type' => 'popup',
-					'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
-					'icon' => 'link_popup.gif',
-					'script' => 'browse_links.php?mode=wizard',
-					'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
+						'type' => 'popup',
+						'title' => 'LLL:EXT:cms/locallang_ttc.xlf:header_link_formlabel',
+						'icon' => 'link_popup.gif',
+						'module' => [
+								'name' => 'wizard_element_browser',
+								'urlParameters' => [
+										'mode' => 'wizard'
+								]
+						],
+						'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
 				]
 			]
 		]
