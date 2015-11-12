@@ -10,12 +10,16 @@ $addColumns = [
 			'eval' => 'trim',
 			'softref' => 'typolink',
 			'wizards' => [
-				'_PADDING' => 2,
 				'link' => [
 					'type' => 'popup',
 					'title' => 'LLL:EXT:cms/locallang_ttc.xml:header_link_formlabel',
 					'icon' => 'link_popup.gif',
-					'script' => 'browse_links.php?mode=wizard',
+					'module' => [
+						'name' => 'wizard_element_browser',
+						'urlParameters' => [
+							'mode' => 'wizard'
+						]
+					],
 					'JSopenParams' => 'height=300,width=500,status=0,menubar=0,scrollbars=1'
 				]
 			]
@@ -43,4 +47,4 @@ $addColumns = [
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $addColumns, TRUE);
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content','tx_add_link;;;;1-1-1, tx_add_link_label, tx_add_link_product', 'text,textpic', 'after:rte_enabled');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes('tt_content','tx_add_link;;;;1-1-1, tx_add_link_label, tx_add_link_product', 'text,textpic', 'after:bodytext');
