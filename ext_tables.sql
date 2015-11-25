@@ -42,10 +42,3 @@ CREATE TABLE tt_content (
 	tx_add_link_label varchar(255) DEFAULT '' NOT NULL,
 	tx_add_link_product varchar(255) DEFAULT '' NOT NULL
 );
-
-#
-# Table structure for table 'tx_news_domain_model_news'
-#
-CREATE TABLE tx_news_domain_model_news (
-	tx_news_comments int(11) DEFAULT '0' NOT NULL
-);
