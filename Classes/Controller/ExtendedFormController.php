@@ -25,7 +25,7 @@ class ExtendedFormController extends \In2code\Powermail\Controller\FormControlle
 				}
 			}
 			if ( $checkEmailEqualFirstId !== $checkEmailEqualSecondId ) {
-				$validator->setIsValid(FALSE);
+				$validator->setIsValid(false);
 			}
 		}
 	}

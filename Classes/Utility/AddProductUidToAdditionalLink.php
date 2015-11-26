@@ -20,7 +20,7 @@
 		 *
 		 * @return string
 		 */
-		public function main(array $tsConfig, $userArguments = array()) {
+		public function main(array $tsConfig, $userArguments = [ ]) {
 			$url = $tsConfig['url'];
 			$regExpCurlyBraceOpen  = preg_quote(rawurlencode('{'), '@');
 			$regExpCurlyBraceClose = preg_quote(rawurlencode('}'), '@');
@@ -39,7 +39,7 @@
 			 */
 			$return = '<a href="%1$s"%2$s>';
 
-			$product = FALSE;
+			$product = false;
 			// get necessary params to apply; replace in url
 			if ( $page = $db->exec_SELECTgetSingleRow('tx_product', 'pages', 'uid=' . $GLOBALS['TSFE']->id) ) {
 				if ( \TYPO3\CMS\Core\Utility\MathUtility::canBeInterpretedAsInteger($page['tx_product']) && \TYPO3\CMS\Core\Utility\MathUtility::convertToPositiveInteger($page['tx_product']) ) {
