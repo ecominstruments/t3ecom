@@ -31,7 +31,8 @@ $columns = [
 		'exclude' => 1,
 		'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:fe_users.privacy_policy',
 		'config' => [
-			'type' => 'check'
+			'type' => 'check',
+			'default' => 1
 		]
 	]
 ];
