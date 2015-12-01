@@ -3,15 +3,6 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-07-13T07:44:29Z" product-name="t3ecom">
 		<header/>
 		<body>
-			<trans-unit id="fe_users.ecom_toolbox_country" xml:space="preserve">
-				<source>Country</source>
-			</trans-unit>
-			<trans-unit id="fe_users.ecom_toolbox_state" xml:space="preserve">
-				<source>State / Province</source>
-			</trans-unit>
-			<trans-unit id="fe_users.privacy_policy" xml:space="preserve">
-				<source>Privacy Policy</source>
-			</trans-unit>
 			<trans-unit id="tx_teaser_text" xml:space="preserve">
 				<source>Teaser Text</source>
 			</trans-unit>
