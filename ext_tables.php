@@ -1,6 +1,10 @@
 <?php
 if (!defined('TYPO3_MODE')) {
-	die('Access denied.');
+    die('Access denied.');
 }
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('t3ecom', 'Resources/Private/TypoScript/CR', 'Content Renderer for additional link');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    't3ecom',
+    'Resources/Private/TypoScript/CR',
+    'Content Renderer for additional link'
+);
