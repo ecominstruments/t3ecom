@@ -2,6 +2,7 @@
 # Table structure for table 'pages'
 #
 CREATE TABLE pages (
+  tx_product_custom_badge varchar(255) DEFAULT '' NOT NULL,
 	tx_teaser_text text,
 	tx_teaser_headline varchar(255) DEFAULT '' NOT NULL,
 	tx_teaser_image varchar(255) DEFAULT '' NOT NULL,
@@ -22,6 +23,7 @@ CREATE TABLE pages (
 # Table structure for table 'pages_language_overlay'
 #
 CREATE TABLE pages_language_overlay (
+  tx_product_custom_badge varchar(255) DEFAULT '' NOT NULL,
 	tx_teaser_text text,
 	tx_teaser_headline varchar(255) DEFAULT '' NOT NULL,
 	tx_teaser_image varchar(255) DEFAULT '' NOT NULL,

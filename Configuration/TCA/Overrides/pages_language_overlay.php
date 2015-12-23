@@ -6,7 +6,7 @@ $addColumns = require(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPat
 \TYPO3\CMS\Core\Utility\ArrayUtility::mergeRecursiveWithOverrule(
 	$GLOBALS['TCA']['pages_language_overlay']['palettes'],
 	[
-		'ecom_product_badges' => [ 'showitem' => 'tx_product_shipping, tx_product_discontinued, --linebreak--, tx_product_zone, tx_product_division', 'canNotCollapse' => 1 ],
+		'ecom_product_badges' => [ 'showitem' => 'tx_product_custom_badge', 'canNotCollapse' => 1 ],
 	]
 );
 

@@ -42,6 +42,9 @@
 			<trans-unit id="tx_product_image" xml:space="preserve">
 				<source>Image</source>
 			</trans-unit>
+			<trans-unit id="tx_product_custom_badge" xml:space="preserve">
+                <source>Custom Badge (HTML)</source>
+            </trans-unit>
 			<trans-unit id="tx_product_shipping" xml:space="preserve">
 				<source>Now shipping</source>
 			</trans-unit>

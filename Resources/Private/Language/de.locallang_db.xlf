@@ -54,6 +54,10 @@
 				<source>Image</source>
 				<target>Bild</target>
 			</trans-unit>
+			<trans-unit id="tx_product_custom_badge" xml:space="preserve">
+				<source>Custom Badge (HTML)</source>
+				<target>Eigenes Label (HTML)</target>
+			</trans-unit>
 			<trans-unit id="tx_product_shipping" xml:space="preserve">
 				<source>Now shipping</source>
 				<target>Jetzt verfügbar</target>

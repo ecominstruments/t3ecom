@@ -134,5 +134,14 @@ return [
 			'size' => 30,
 			'eval' => 'trim'
 		]
-	]
+	],
+    'tx_product_custom_badge' => [
+        'exclude' => 1,
+        'l10n_mode' => 'mergeIfNotBlank',
+        'label' => 'LLL:EXT:t3ecom/Resources/Private/Language/locallang_db.xlf:tx_product_custom_badge',
+        'config' => [
+            'type' => 'input',
+            'eval' => 'trim'
+        ]
+    ]
 ];

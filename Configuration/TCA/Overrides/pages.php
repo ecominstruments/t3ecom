@@ -2,7 +2,7 @@
 
 $addColumns = require(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('t3ecom', 'Resources/Private/PHP/TCA/Overrides/pages.php'));
 
-	// Single fields that apply to pages table only (no language overlay / l10n merge)
+// Single fields that apply to pages table only (no language overlay / l10n merge)
 $addColumns['tx_product_shipping'] = [
 	'exclude' => 1,
 	'l10n_mode' => 'exclude',
@@ -67,7 +67,7 @@ $addColumns['tx_product'] = [
 \TYPO3\CMS\Core\Utility\ArrayUtility::mergeRecursiveWithOverrule(
 	$GLOBALS['TCA']['pages']['palettes'],
 	[
-		'ecom_product_badges' => [ 'showitem' => 'tx_product_shipping, tx_product_discontinued, --linebreak--, tx_product_zone, tx_product_division', 'canNotCollapse' => 1 ],
+		'ecom_product_badges' => [ 'showitem' => 'tx_product_shipping, tx_product_discontinued, tx_product_custom_badge, --linebreak--, tx_product_zone, tx_product_division', 'canNotCollapse' => 1 ],
 	]
 );
 
