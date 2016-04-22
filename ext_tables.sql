@@ -42,7 +42,5 @@ CREATE TABLE pages_language_overlay (
 CREATE TABLE tt_content (
 	tx_add_link varchar(255) DEFAULT '' NOT NULL,
 	tx_add_link_label varchar(255) DEFAULT '' NOT NULL,
-	tx_add_link_product varchar(255) DEFAULT '' NOT NULL,
-	spaceBefore smallint(5) unsigned NOT NULL DEFAULT '0',
-  spaceAfter smallint(5) unsigned NOT NULL DEFAULT '0'
+	tx_add_link_product varchar(255) DEFAULT '' NOT NULL
 );

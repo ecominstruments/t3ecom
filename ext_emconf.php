@@ -19,11 +19,11 @@ $EM_CONF[$_EXTKEY] = [
     'modify_tables' => 'pages,pages_language_overlay,tt_content,tx_news_domain_model_news',
     'clearCacheOnLoad' => 0,
     'lockType' => '',
-    'version' => '1.1.4',
+    'version' => '1.1.3',
     'constraints' => [
         'depends' => [
             'typo3' => '6.2.10-7.6.99',
-            'powermail' => '2.0.0-3.0.99'
+            'powermail' => '2.0.0-2.99.99'
         ],
         'conflicts' => [
         ],

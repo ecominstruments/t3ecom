@@ -6,9 +6,6 @@
 			<trans-unit id="learn_more" xml:space="preserve">
 				<source>Learn more</source>
 			</trans-unit>
-			<trans-unit id="validation_email_match" xml:space="preserve">
-                <source>Both e-mails must match!</source>
-            </trans-unit>
 		</body>
 	</file>
 </xliff>
