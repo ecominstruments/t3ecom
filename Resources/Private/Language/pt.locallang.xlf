@@ -7,6 +7,10 @@
 				<source>Learn more</source>
 				<target>Saiba mais</target>
 			</trans-unit>
+			<trans-unit id="validation_email_match" xml:space="preserve">
+                <source>Both e-mails must match!</source>
+                <target>Os endereços de correio electrónico não coincidem!</target>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>
