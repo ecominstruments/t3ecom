@@ -77,7 +77,7 @@ $addColumns = [
     ]
 ];
 
-$GLOBALS['TCA']['tt_content']['palettes']['spacing']['showitem'] = 'spaceBefore, spaceAfter';
+$GLOBALS['TCA']['tt_content']['palettes']['frames']['showitem'] = 'spaceBefore, spaceAfter';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $addColumns, true);
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content',
@@ -85,5 +85,5 @@ $GLOBALS['TCA']['tt_content']['palettes']['spacing']['showitem'] = 'spaceBefore,
 );
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content',
-    '--palette--;Spacing;spacing', '','after:layout'
+    '--palette--;Spacing;frames', '','after:layout'
 );
