@@ -10,7 +10,7 @@ use TYPO3\CMS\Extbase\Error\Error;
 
 /**
  * Class EmailValidator
- * 
+ *
  * USAGE
  * Add to Typoscript:
  * * * * * * * * * * * * * * * * * * * * *
@@ -18,18 +18,21 @@ use TYPO3\CMS\Extbase\Error\Error;
  *       1 {
  *           # Classname that should be called with method *Validator()
  *           class = Ecom\T3ecom\Validator\EmailValidator
- *           
+ *
+ *
  *           # optional: Add configuration for your PHP
  *           config {
  *               emailMarker = e_mail, log_e_mail
  *               emailConfirmMarker = confirme_mail, log_confirme_mail
  *           }
- *           
+ *
+ *
+ *
  *           # optional: If file will not be loaded from autoloader, add path and it will be called with require_once
  *           #require = fileadmin/....php
  *       }
  *   }
- * * * * * * * * * * * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * *
  * Validates E-Mail field with the confirm E-Mail field
  * @package Ecom\T3ecom\Validator
  */
